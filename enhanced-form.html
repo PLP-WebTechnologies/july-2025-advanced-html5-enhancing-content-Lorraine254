@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2</title>
+    </head>
+    <body>
+        <header>
+            <h1>Restaurant Table Booking</h1>
+        </header>
+        <main>
+            <img src="https://images.pexels.com/photos/15792422/pexels-photo-15792422.jpeg" 
+            alt="Recipe Ingredients" width="500" height="350" >
+            <h2>Our Menu</h2>
+            <ol>
+                <li>Starters:
+                    <ol type="a">
+                        <li>Cream of Pumpkin Soup with Freshly Baked Bread Rolls</li>
+                        <li>Creamy Tomato Basil Soup with Garlic Bread</li>
+                        <li>Lentil and Coconut Soup with Chapati Strips</li>
+                    </ol>
+                </li>
+                <li>Main Menu:
+                    <ol type="a">
+                        <li>Nyama Choma (grilled goat or beef served with kachumbari)</li>
+                        <li>Tilapia Fry (whole deep-fried tilapia with coconut sauce)</li>
+                        <li>Mukimo & Beef Stew (mashed maize, potatoes, greens with rich beef stew)</li>
+                    </ol>
+                </li>
+                <li>Desserts:
+                    <ol type="a">
+                        <li>Carrot Cake with Cream Cheese Frosting</li>
+                        <li>Malindi Coconut Tart</li>
+                        <li>Tropical Fruit Platter (mango, pineapple, passion fruit)</li>
+                    </ol>
+                </li>
+            </ol>
+            <video controls width="640" height="350">
+                <source src="https://videos.pexels.com/video-files/1111420/1111420-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+            <h2>Price Menu</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th> Menu</th>
+                        <th>Description</th>
+                        <th>Price(Per person)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classic Set</td>
+                        <td>Starter, Main Course, Dessert</td>
+                        <td>Ksh.2500</td>
+                    </tr>
+                    <tr>
+                        <td>Gourmet Set</td>
+                        <td>Starter, Premium Main, Dessert, Fresh Juice </td>
+                        <td>Ksh.3800</td>
+                    </tr>
+                    <tr>
+                        <td>Chef’s Tasting</td>
+                        <td>5-Course Tasting Menu with Beverage Pairing</td>
+                        <td>Ksh.6000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2> Secure your spot today!</h2>
+            <form action="" method="">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Menu & Date Selection</legend>
+                    <label for="menu">Select Menu:</label>
+                    <select id="menu" name="menu" required>
+                        <option value="" disabled selected>Select a menu</option>
+                        <option value="classic">Classic Set </option>
+                        <option value="gourmet">Gourmet Set </option>
+                        <option value="tasting">Chef’s Tasting </option>
+                    </select>
+                    <br><br>
+                    <!-- Date Selection -->
+                    <label for="date">Preferred date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <label for="allergies">Dietary Restrictions:</label><br>
+                    <textarea id="allergies" name="allergies" 
+                                rows="4" cols="40" 
+                                placeholder="Please specify any food allergies or special dietary needs here..."></textarea>
+                    <br><br>
+                </fieldset>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </body>
+</html>
